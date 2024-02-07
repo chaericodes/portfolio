@@ -1,8 +1,8 @@
 :root {
-    --subtitle-color: #4b4b4b;
+    --subtitle-color: #000000;
     --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     --paragraph-bg-color: #f5f2fe;
-    --button-color: #6c63ff;
+    --button-color: #606470;
   }
   
   .content {
@@ -18,8 +18,8 @@
     margin: 0px !important;
   }
   
-  h1 {
-    font-size: 48px !important;
+  h1, h3 {
+    font-size: 35px !important;
   }
   
   h2 {
@@ -29,10 +29,15 @@
   .greetings {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     margin: 0px auto;
+    font-family: Inter, sans-serif;
+    font-weight: bold;
   }
   
+  #dev-owner {
+    line-height: 90px;
+  }
   #dev-title {
     color: var(--subtitle-color);
   }
@@ -50,30 +55,30 @@
   
   #contact-me-nav-link:hover {
     background-color: white;
-    color: #6c63ff;
-    border: 1px solid #6c63ff;
+    color: var(--button-color);
+    border: 1px solid var(--button-color);
     transition: ease-in-out 300ms;
   }
   
   #about-me-nav-link {
     background-color: white;
-    color: #6c63ff;
-    border: 1px solid #6c63ff;
+    color: var(--button-color);
+    border: 1px solid var(--button-color);
     padding: 20px;
   }
   
   #contact-me-nav-link {
-    background-color: #6c63ff;
+    background-color: var(--button-color);
     box-shadow: var(--box-shadow);
     color: white;
-    border: 1px solid #6c63ff;
+    border: 1px solid var(--button-color);
     padding: 20px;
   }
   
   #about-me-nav-link:hover {
     color: white;
-    border: 1px solid #6c63ff;
-    background-color: #6c63ff;
+    border: 1px solid var(--button-color);;
+    background-color: var(--button-color);
     transition: ease-in-out 300ms;
   }
   
