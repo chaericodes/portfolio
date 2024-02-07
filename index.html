@@ -16,6 +16,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/721b5a109e.js" crossorigin="anonymous"></script>
     <title>Home | CJSB</title>
   </head>
@@ -25,9 +28,9 @@
     crossorigin="anonymous"
   ></script>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-custom">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Chayry Bustamante</a>
+        <a class="navbar-brand" href="index.html">cjsb.</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -53,23 +56,29 @@
       </div>
     </nav>
     <div class="content">
-      <div class="greetings">
-        <h1>🙋‍♀️ Hi, I am</h1>
-        <h2>Chayry Bustamante</h2>
-        <h3 id="dev-title">
-          🇵🇭 Front-end developer, based in South East Asia
-        </h3>
-      </div>
-
-      <div class="navigation-links">
-        <a id="contact-me-nav-link" href="about-me.html#contact-me"
-          >Contact me</a
-        >
-        <a id="about-me-nav-link" href="about-me.html">About me</a>
+      <div class="row">
+        <div class="col">
+          <div class="greetings">
+            <h1>hi, i am</h1>
+            <h2 id="dev-owner">chayry</h2>
+            <h2 id="dev-owner">bustamante</h2>
+            <h3 id="dev-title">
+              front-end web developer.
+            </h3>
+            <h3>designer. freelancer.</h3>
+          </div>
+          <div class="navigation-links">
+            <a id="contact-me-nav-link" href="about-me.html/#contact-me">CONTACT</a>
+            <a id="about-me-nav-link"href="about-me.html">PORTFOLIO</a>
+          </div>
+        </div>
+        <div class="col">
+          <img src="images/dev-pic.jpg" alt="" id="dev-pic">
+        </div>
       </div>
     </div>
 
-    <div class="container">
+    <!--<div class="container">
       <div class="row mt-5 mb-5">
         <div class="col-6 rounded content-color text-center p-5">
           <img src="images/fin-proj-1.png" class="img-fluid shadow rounded" alt="">
@@ -122,6 +131,6 @@
             </div>
           </div>
       </div>
-    </div>
+    </div>-->
   </body>
 </html>
